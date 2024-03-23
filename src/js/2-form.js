@@ -28,11 +28,20 @@ function handleMessage(event){
 
 
 function handleSubmit(event){
-event.preventDefault();
-form.reset();
-localStorage.removeItem(keyValue);
-
+  event.preventDefault();
+   if (email.value.trim() && message.value.trim()) {
+    const formData = {
+      email: email.value.trim(),
+      message: message.value.trim(),
+    };
+    console.log("Form data:", formData);
+    form.reset();
+    localStorage.removeItem(keyValue);
+   } else {alert(`Please fill out both email and message fields before submitting.`)
+  }      
 }
+
+
 
 
 
