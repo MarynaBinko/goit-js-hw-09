@@ -8,3 +8,58 @@
 @import url('./vite-promo.css');
 @import url('./header.css');
 
+
+
+  .feedback-form {
+    width: 360px;
+  }
+  
+  .feedback-form > label {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback-form input,
+  .feedback-form message {
+    font: inherit;
+   padding: 8px 0;
+  }
+  
+  .submit-btn{
+    width: 100%;
+    max-width: 85px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  .gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    }
+    
+    .gallery-item{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: calc((100% - 25px * 2) / 3);
+        background-color: white;
+       box-sizing: border-box;
+    }
+    
+    .gallery-image{
+        max-width: 100%;
+        width: 360px;
+        height: 200px;
+        display: block;
+    
+    }
