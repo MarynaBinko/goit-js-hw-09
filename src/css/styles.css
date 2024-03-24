@@ -41,7 +41,7 @@
   }
   
 
-  .gallery-list{
+  .gallery{
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
